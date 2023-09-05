@@ -178,6 +178,14 @@ function isURLValida(url) {
     }
 }
 
+function isURLValida(url) {
+    if(url.match(/\.(com|br)$/) != null){
+        return true;
+    } else {
+        return false;
+    }
+}
+
 function dateinPTBR(date) {
     console.log("Passou pela funcao dateinPTBR()");
 
